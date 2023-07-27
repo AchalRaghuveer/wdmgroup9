@@ -4,7 +4,7 @@ import '../../global.css';
 
 function LoginPage() {
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
     const formData = new FormData(event.target);
     console.log({
       email: formData.get('username'),
@@ -20,9 +20,9 @@ function LoginPage() {
           <li className="dropdown">
             <a href="#">SERVICES</a>
             <div className="dropdown-content">
-              <a href="Services_URM_candidates.html">CANDIDATE</a>
-              <a href="Services_Academia.html">ACADEMIA</a>
-              <a href="Services_DEI.html">DEI</a>
+              <Link to="/serviceurm" style={{textDecoration: 'none'}} >CANDIDATE</Link>
+              <Link to="/serviceacademia" style={{textDecoration: 'none'}} >ACADEMIA</Link>
+              <Link to="/servicedei" style={{textDecoration: 'none'}} >DEI</Link>
               <a href="Services_Recruiter.html">RECRUITER</a>
             </div>
           </li>

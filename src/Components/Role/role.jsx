@@ -11,9 +11,9 @@ function RolePage() {
           <li className="dropdown">
             <a href="#">SERVICES</a>
             <div className="dropdown-content">
-              <a href="Services_URM_candidates.html">CANDIDATE</a>
-              <a href="#">ACADEMIA</a>
-              <a href="Services_DEI.html">DEI</a>
+              <Link to="/serviceurm" style={{textDecoration: 'none'}} >CANDIDATE</Link>
+              <Link to="/serviceacademia" style={{textDecoration: 'none'}} >ACADEMIA</Link>
+              <Link to="/servicedei" style={{textDecoration: 'none'}} >DEI</Link>
               <a href="#">RECRUITER</a>
             </div>
           </li>
@@ -29,10 +29,10 @@ function RolePage() {
           </div>
           <br />
           <div className="links">
-            <a href="URM_Candidate_registration.html">URM Candidate</a>
-            <a href="Academic_Institution_registration.html">Academic Institution</a>
+          <Link to="/urmcandidateReg" style={{textDecoration: 'none'}} >URM Candidate</Link>
+          <Link to="/academicReg" style={{textDecoration: 'none'}} >Academic Institution</Link>
             <a href="Recruiter_registration.html">Recruiter</a>
-            <a href="DEI_officer_registration.html">DEI Officer</a>
+            <Link to="/deiReg" style={{textDecoration: 'none'}} >DEI Officer</Link>
           </div>
         </section>
         <footer className="foot">
